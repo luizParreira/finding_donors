@@ -13801,7 +13801,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Import libraries necessary for this project</span>
@@ -13984,7 +13984,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># TODO: Total number of records</span>
@@ -14077,7 +14077,7 @@ Percentage of individuals making more than $50,000: 24.7843969749 %
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Split the data into features and target label</span>
@@ -14429,7 +14429,7 @@ kiSpEZsISZIkSY3YREiSJElq5B9vu7vEqJm8vwAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Log-transform the skewed features</span>
@@ -14782,7 +14782,7 @@ DBGSJEmSWjFESJIkSWrFECFJkiSplR9peIU7Io5xDAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Import sklearn.preprocessing.StandardScaler</span>
@@ -14992,7 +14992,7 @@ DBGSJEmSWjFESJIkSWrFECFJkiSplR9peIU7Io5xDAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># TODO: One-hot encode the &#39;features_log_minmax_transform&#39; data using pandas.get_dummies()</span>
@@ -15027,7 +15027,7 @@ DBGSJEmSWjFESJIkSWrFECFJkiSplR9peIU7Io5xDAAAAABJRU5ErkJggg==
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -15217,7 +15217,7 @@ DBGSJEmSWjFESJIkSWrFECFJkiSplR9peIU7Io5xDAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Import train_test_split</span>
@@ -15313,7 +15313,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="sd">&#39;&#39;&#39;</span>
@@ -15334,8 +15334,8 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <span class="n">precision</span> <span class="o">=</span> <span class="n">TP</span> <span class="o">/</span> <span class="p">(</span><span class="n">TP</span> <span class="o">+</span> <span class="n">FP</span><span class="p">)</span>
 
 <span class="c"># TODO: Calculate F-score using the formula above for beta = 0.5 and correct values for precision and recall.</span>
-<span class="n">beta</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">fscore</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">+</span> <span class="n">beta</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="n">precision</span> <span class="o">*</span> <span class="n">recall</span><span class="p">)</span> <span class="o">/</span> <span class="p">((</span><span class="n">beta</span> <span class="o">*</span> <span class="n">precision</span><span class="p">)</span> <span class="o">+</span> <span class="n">recall</span><span class="p">))</span>
+<span class="n">beta_squared</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">**</span> <span class="mi">2</span>
+<span class="n">fscore</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">+</span> <span class="n">beta_squared</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="n">precision</span> <span class="o">*</span> <span class="n">recall</span><span class="p">)</span> <span class="o">/</span> <span class="p">((</span><span class="n">beta_squared</span> <span class="o">*</span> <span class="n">precision</span><span class="p">)</span> <span class="o">+</span> <span class="n">recall</span><span class="p">))</span>
 
 <span class="c"># Print the results </span>
 <span class="k">print</span><span class="p">(</span><span class="s">&quot;Naive Predictor: [Accuracy score: {:.4f}, F-score: {:.4f}]&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">fscore</span><span class="p">))</span>
@@ -15351,7 +15351,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Naive Predictor: [Accuracy score: 0.2478, F-score: 0.3308]
+<pre>Naive Predictor: [Accuracy score: 0.2478, F-score: 0.2917]
 </pre>
 </div>
 </div>
@@ -16368,8 +16368,26 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p><code>XGBoost</code> is an implementation of Gradient Boosting, it is a collection of decision trees with a number of configurations that improve computational speed and sets a trade off between overfitting and underfitting your data. It supports gradient, stochastic (random) gradient and regularization (L1 and L2) boosting. Other important system features of this model are the parallelization component (setting the number of threads to run on), distributed computing (for training very large data sets) , out of core computing (for very large datasets that dont fit into memory) and cache optimization (helps make the best use of the computer hardware available).</p>
+<p><code>XGBoost</code> is an implementation of Gradient Boosting, which is a boosting algorithm that trains itself in an emsemble (we will get to that later) fashion. When training data with such an algorithm, in a naive implementation, you would:</p>
+<ol>
+<li>fit your model to the data.</li>
+<li>fit your model to the residuals, which are the prediction results gathered from previous iterations.</li>
+<li>Create a new model</li>
+<li>Repeat the process</li>
+</ol>
+<p>When you do that, you will need a way to minimize errors, thats where you can use one of the three forms of gradient boosting:</p>
+<ul>
+<li>Gradient Boosting: algorithm also called gradient boosting machine including the learning rate.</li>
+<li>Stochastic Gradient Boosting: with sub-sampling at the row, column and column per split levels.</li>
+<li>Regularized Gradient Boosting: with both L1 and L2 regularization.</li>
+</ul>
+<p>You may have noticed I mentioned the word <code>ensemble</code>, ensembles are used to fit your data to one or multilple <code>weak learners</code> (which in our case is a Gradient Boosting Tree, as shown in the <a href="https://xgboost.readthedocs.io/en/latest/python/python_api.html">docs</a>), and using the results of those learners to find the final model based on the iteration parameters passed in and the loss function chosen, to then be used on the testing data. Weak Learners, are learning algorithms that the ensemble algorithm will use to train the predictions on each iteration, it usually is a tree-like algorithm, but there is nothing that says that must be the case.</p>
 <p>In addition to the features outlined earlier, <code>XGBoost</code> is an algorithm that has some interesting qualities, such as being able to handle missing values, support the parallelization of the construction of the trees and use an older model to train a new one.</p>
+<p>Sources:</p>
+<ul>
+<li><a href="https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/">A Gentle Introduction to XGBoost for Applied Machine Learning</a></li>
+<li><a href="http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/">A Kaggle Master Explains Gradient Boosting</a></li>
+</ul>
 
 </div>
 </div>
